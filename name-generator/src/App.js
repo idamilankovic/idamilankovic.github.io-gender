@@ -1,12 +1,14 @@
 import './App.css';
-import GetName from './components/getName';
+
+import GetPong from './components/getPong';
 
 function App() {
 
   return (
     <div>
-      <h1>Hello it_grow</h1>
-      <span><GetName /></span>
+      <h1>Hello</h1>
+      {/* <span><GetName /></span> */}
+      <span><GetPong /></span>
     </div>
   );
 }
