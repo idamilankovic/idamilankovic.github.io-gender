@@ -3,39 +3,39 @@ import React from 'react';
 
 function GetName() {
 
-//   const requestOptions = {
-//     method: 'POST',
-//     mode: 'no-cors',
-//     headers: {
-//       'Content-type': 'application/json',
-//       'Access-Control-Allow-Origin': '*',
-//       },
-//     body: JSON.stringify(
-//       {
-//         inputPerson : {
-//           type : "NaturalInputPerson",
-//           personName : {
-//             nameFields : [ {
-//               string : "Andrea",
-//               fieldType : "GIVENNAME"
-//             } ]
-//           },
-//           gender : "UNKNOWN"
-//         }
-//       }
-//     )
-//   }
+  const requestOptions = {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      },
+    body: JSON.stringify(
+      {
+        inputPerson : {
+          type : "NaturalInputPerson",
+          personName : {
+            nameFields : [ {
+              string : "Andrea",
+              fieldType : "GIVENNAME"
+            } ]
+          },
+          gender : "UNKNOWN"
+        }
+      }
+    )
+  }
 
-//   console.log(JSON.stringify(data))
+  //console.log(JSON.stringify(data))
 
-// function handleName() {
-//     fetch('https://api.nameapi.org/rest/v5.3/genderizer/persongenderizer?apiKey=d10fcce41e8fb0a55f1d64a4ce1fcef4-user1', requestOptions)
-//     .then(response => 
+function handleName() {
+    fetch('https://api.nameapi.org/rest/v5.3/genderizer/persongenderizer?apiKey=d10fcce41e8fb0a55f1d64a4ce1fcef4-user1', requestOptions)
+    .then(response => 
       
-//       console.log(response))
-//       .catch((error) => console.log(error))
-//     // .then((response) => response.text())
-//   }
+      console.log(response))
+      .catch((error) => console.log(error))
+    // .then((response) => response.text())
+  }
     // .then((dataStr)=> {
     //   let data = dataStr;
     //   console.log(data)
@@ -43,7 +43,7 @@ function GetName() {
 
   return (
     <div>
-      <button>klik za gender</button>
+      {/* <button onClick={handleName}>klik za gender</button> */}
         <h1>
 
         </h1>
