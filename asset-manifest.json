@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/idamilankovic.github.io-gender/static/css/main.073c9b0a.css",
-    "main.js": "/idamilankovic.github.io-gender/static/js/main.e37f16d8.js",
+    "main.js": "/idamilankovic.github.io-gender/static/js/main.df241be3.js",
     "static/js/787.eb70e239.chunk.js": "/idamilankovic.github.io-gender/static/js/787.eb70e239.chunk.js",
     "index.html": "/idamilankovic.github.io-gender/index.html",
     "main.073c9b0a.css.map": "/idamilankovic.github.io-gender/static/css/main.073c9b0a.css.map",
-    "main.e37f16d8.js.map": "/idamilankovic.github.io-gender/static/js/main.e37f16d8.js.map",
+    "main.df241be3.js.map": "/idamilankovic.github.io-gender/static/js/main.df241be3.js.map",
     "787.eb70e239.chunk.js.map": "/idamilankovic.github.io-gender/static/js/787.eb70e239.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e37f16d8.js"
+    "static/js/main.df241be3.js"
   ]
 }
