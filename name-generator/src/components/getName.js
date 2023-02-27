@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 //import data from './data.json';
 
 function GetName() {
+  const [name, setName] = useState('')
 
   const requestOptions = {
     method: 'POST',
     mode: 'no-cors',
     headers: {
-      'Content-type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
+      "Content-type" : "application/json"
+
       },
     body: JSON.stringify(
       {
@@ -28,22 +29,33 @@ function GetName() {
 
   //console.log(JSON.stringify(data))
 
-function handleName() {
+const handleName = () => {
     fetch('https://api.nameapi.org/rest/v5.3/genderizer/persongenderizer?apiKey=d10fcce41e8fb0a55f1d64a4ce1fcef4-user1', requestOptions)
-    .then(response => 
-      
-      console.log(response))
-      .catch((error) => console.log(error))
-    // .then((response) => response.text())
+    .then(response => response.json())
+    .catch((error) => console.log(error))
   }
-    // .then((dataStr)=> {
-    //   let data = dataStr;
-    //   console.log(data)
-    // })
+
+  // const fetchPong = async () => {
+  //   //const handlePong = (e) => {
+  //     //e.preventDefault();
+  //     const response = await fetch("https://api.nameapi.org/rest/v5.3/system/ping?apiKey=d10fcce41e8fb0a55f1d64a4ce1fcef4-user1", {
+  //         method: "GET",
+  //         mode: 'no-cors',
+  //         headers: {
+  //             'Content-type': 'application/json',
+  //             'Access-Control-Allow-Origin': 'http://localhost:3000/idamilankovic.github.io-gender',
+  //             //'Access-Control-Allow-Methods': 'GET, POST',
+  //             },
+  //     }).then(response => response.json())
+  //       .then(data => setPing(data))
+  //     .catch(error => console.log(error))
+  // }
+  // //}
+
 
   return (
     <div>
-      {/* <button onClick={handleName}>klik za gender</button> */}
+      <button onClick={handleName}>Gender</button>
         <h1>
 
         </h1>

@@ -1,14 +1,12 @@
 import './App.css';
+import GetGender from './components/getGender';
 
-import GetPong from './components/getPong';
 
 function App() {
 
   return (
-    <div>
-      <h1>Hello</h1>
-      {/* <span><GetName /></span> */}
-      <span><GetPong /></span>
+    <div className='body'>
+      <span><GetGender /></span>
     </div>
   );
 }
