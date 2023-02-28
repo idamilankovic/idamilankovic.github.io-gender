@@ -35,7 +35,8 @@ const getGender = () => {
 }
 
   return (
-    <div style={{backgroundColor: "#00FF00"}}>
+    // <div style={{backgroundColor: "#00FF00"}}>
+      <div >
       <h1>Unesi ime:</h1>
         <form>
             <input 
@@ -49,7 +50,7 @@ const getGender = () => {
               
         </form>
         <button type="submit" onClick={getGender}>Gender</button>
-        <span>{(name != "") ? gender : ""}</span>
+        <span>{(name !== "") ? gender : ""}</span>
 
     </div>
   )
