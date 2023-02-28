@@ -1,4 +1,5 @@
 import './App.css';
+import Char from './components/char';
 import GetGender from './components/getGender';
 
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className='body'>
       <span><GetGender /></span>
+      {/* <span><Char /></span> */}
     </div>
   );
 }
